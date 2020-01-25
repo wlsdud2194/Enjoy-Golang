@@ -7,17 +7,6 @@ import (
 	"time"
 )
 
-func main() {
-	// 첫째항 값, 등차, n차 항
-	const a1, diff, n int = 1, 10, 5
-
-	fmt.Printf("\n첫째항(a1): %d, 등차(d): %d, n차 항까지(n): %d\n", a1, diff, n)
-
-	// ArithmeticalList(a1, diff, n)
-	Sum := GetArithmeticalSum(a1, diff, n)
-	fmt.Print(Sum)
-}
-
 /** 등차 수열의 합 */
 func GetArithmeticalSum(a1, diff, section int) int {
 	var result int = 0
@@ -38,4 +27,15 @@ func GetArithmeticalSum(a1, diff, section int) int {
 	}
 
 	return result
+}
+
+func main() {
+	// 첫째항 값, 등차, n차 항
+	const a1, diff, n int = 1, 10, 5
+
+	fmt.Printf("\n첫째항(a1): %d, 등차(d): %d, n차 항까지(n): %d\n", a1, diff, n)
+
+	// ArithmeticalList(a1, diff, n)
+	Sum := GetArithmeticalSum(a1, diff, n)
+	fmt.Print(Sum)
 }

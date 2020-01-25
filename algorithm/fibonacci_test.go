@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func ExampleFibonacci() {
 	p, q := 0, 1
 	const n int = 10
 

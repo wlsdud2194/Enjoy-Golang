@@ -12,7 +12,7 @@ func factorial(num int) int {
 	return num * factorial(num-1)
 }
 
-func main() {
+func ExampleFactorial() {
 	fmt.Println(factorial(4))
 	fmt.Println(factorial(5))
 }
